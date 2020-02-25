@@ -39,6 +39,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnContinue = new System.Windows.Forms.Button();
+            this.lblThin = new System.Windows.Forms.Label();
+            this.lblThick = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.thinBox.SuspendLayout();
             this.thickBox.SuspendLayout();
             this.deepBase.SuspendLayout();
@@ -49,6 +52,8 @@
             // 
             // thinBox
             // 
+            this.thinBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.thinBox.Controls.Add(this.lblThin);
             this.thinBox.Controls.Add(this.pictureBox1);
             this.thinBox.Controls.Add(this.btnThin);
             this.thinBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -61,6 +66,8 @@
             // 
             // thickBox
             // 
+            this.thickBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.thickBox.Controls.Add(this.lblThick);
             this.thickBox.Controls.Add(this.pictureBox2);
             this.thickBox.Controls.Add(this.btnThick);
             this.thickBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -73,6 +80,8 @@
             // 
             // deepBase
             // 
+            this.deepBase.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.deepBase.Controls.Add(this.label2);
             this.deepBase.Controls.Add(this.pictureBox3);
             this.deepBase.Controls.Add(this.btnDeep);
             this.deepBase.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -86,6 +95,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rage Italic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(171, 23);
@@ -102,6 +112,7 @@
             this.btnThin.TabIndex = 0;
             this.btnThin.Text = "Select";
             this.btnThin.UseVisualStyleBackColor = true;
+            this.btnThin.Click += new System.EventHandler(this.BtnThin_Click);
             // 
             // btnThick
             // 
@@ -111,6 +122,7 @@
             this.btnThick.TabIndex = 0;
             this.btnThick.Text = "Select";
             this.btnThick.UseVisualStyleBackColor = true;
+            this.btnThick.Click += new System.EventHandler(this.BtnThick_Click);
             // 
             // btnDeep
             // 
@@ -120,6 +132,7 @@
             this.btnDeep.TabIndex = 0;
             this.btnDeep.Text = "Select";
             this.btnDeep.UseVisualStyleBackColor = true;
+            this.btnDeep.Click += new System.EventHandler(this.BtnDeep_Click);
             // 
             // pictureBox3
             // 
@@ -153,6 +166,7 @@
             // 
             // btnContinue
             // 
+            this.btnContinue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnContinue.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContinue.Location = new System.Drawing.Point(936, 524);
             this.btnContinue.Name = "btnContinue";
@@ -160,6 +174,37 @@
             this.btnContinue.TabIndex = 4;
             this.btnContinue.Text = "CONTINUE >";
             this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.BtnContinue_Click);
+            // 
+            // lblThin
+            // 
+            this.lblThin.AutoSize = true;
+            this.lblThin.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThin.Location = new System.Drawing.Point(7, 172);
+            this.lblThin.Name = "lblThin";
+            this.lblThin.Size = new System.Drawing.Size(155, 32);
+            this.lblThin.TabIndex = 2;
+            this.lblThin.Text = "Light, yet delicious pizza!\r\n£3.99";
+            // 
+            // lblThick
+            // 
+            this.lblThick.AutoSize = true;
+            this.lblThick.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThick.Location = new System.Drawing.Point(7, 172);
+            this.lblThick.Name = "lblThick";
+            this.lblThick.Size = new System.Drawing.Size(142, 32);
+            this.lblThick.TabIndex = 2;
+            this.lblThick.Text = "Thick and hearty pizza!\r\n£5.99";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 174);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(248, 32);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Chicago pizza, baked for maximum taste!\r\n£6.99";
             // 
             // PizzaBaseForm
             // 
@@ -174,8 +219,11 @@
             this.Name = "PizzaBaseForm";
             this.Text = "Select Pizza Base";
             this.thinBox.ResumeLayout(false);
+            this.thinBox.PerformLayout();
             this.thickBox.ResumeLayout(false);
+            this.thickBox.PerformLayout();
             this.deepBase.ResumeLayout(false);
+            this.deepBase.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -197,5 +245,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnContinue;
+        private System.Windows.Forms.Label lblThin;
+        private System.Windows.Forms.Label lblThick;
+        private System.Windows.Forms.Label label2;
     }
 }

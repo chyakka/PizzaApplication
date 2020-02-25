@@ -56,10 +56,19 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Managers\UserData.cs" />
+    <Compile Include="PizzaBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PizzaBaseForm.Designer.cs">
+      <DependentUpon>PizzaBaseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PizzaBaseForm.resx">
+      <DependentUpon>PizzaBaseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -69,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -83,6 +93,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\chicago.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicago1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
