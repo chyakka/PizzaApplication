@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PizzaApplication.Classes;
+using PizzaApplication.Managers;
 
 namespace PizzaApplication
 {
@@ -38,7 +39,10 @@ namespace PizzaApplication
             /* Basic logic; checks if the base is equal to null i.e. not selected yet or if it's equal to what they are choosing, preventing redundant code */
             if (SelectedBase == null || SelectedBase.ItemName != "Thin Pizza Base")
             {
+                if (SelectedBase != null && UserData.order.Items.Contains(SelectedBase)) UserData.order.Items.Remove(SelectedBase);
                 SelectedBase = new Item("Thin Pizza Base", 3.99f, Item.Type.Base);
+                UserData.order.Items.Add(SelectedBase);
+                BasketManager.UpdateBasketDisplay(orderList);
                 ChangeSelectedBase(btnThin);
             }
         }
@@ -48,16 +52,22 @@ namespace PizzaApplication
             /* Repeated code for each button */
             if (SelectedBase == null || SelectedBase.ItemName != "Thick Pizza Base")
             {
+                if (SelectedBase != null && UserData.order.Items.Contains(SelectedBase)) UserData.order.Items.Remove(SelectedBase);
                 SelectedBase = new Item("Thick Pizza Base", 5.99f, Item.Type.Base);
+                UserData.order.Items.Add(SelectedBase);
+                BasketManager.UpdateBasketDisplay(orderList);
                 ChangeSelectedBase(btnThick);
             }
         }
 
         private void BtnDeep_Click(object sender, EventArgs e)
         {
-            if (SelectedBase == null || SelectedBase.ItemName != "Deep Dish Base (Chicago)" )
+            if (SelectedBase == null || SelectedBase.ItemName != "Chicago Base")
             {
-                SelectedBase = new Item("Deep Dish Base (Chicago)", 6.99f, Item.Type.Base);
+                if (SelectedBase != null && UserData.order.Items.Contains(SelectedBase)) UserData.order.Items.Remove(SelectedBase);
+                SelectedBase = new Item("Chicago Base", 6.99f, Item.Type.Base);
+                UserData.order.Items.Add(SelectedBase);
+                BasketManager.UpdateBasketDisplay(orderList);
                 ChangeSelectedBase(btnDeep);
             }
         }
@@ -94,6 +104,26 @@ namespace PizzaApplication
                     return;
                 }
             }
+        }
+
+        private void LblOrder_Enter(object sender, EventArgs e)
+        {
+            orderList.Visible = true;
+        }
+
+        private void LblOrder_Leave(object sender, EventArgs e)
+        {
+            orderList.Visible = false;
+        }
+
+        private void LblOrder_MouseEnter(object sender, EventArgs e)
+        {
+            orderList.Visible = true;
+        }
+
+        private void LblOrder_MouseLeave(object sender, EventArgs e)
+        {
+            orderList.Visible = false;
         }
     }
 }

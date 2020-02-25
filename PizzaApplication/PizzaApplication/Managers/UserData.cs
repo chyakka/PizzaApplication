@@ -11,6 +11,6 @@ namespace PizzaApplication.Managers
     public static class UserData
     {
         public static User user;
-        public static Order order;
+        public static Order order = new Order();
     }
 }

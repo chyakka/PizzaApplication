@@ -42,6 +42,8 @@
             this.lblThin = new System.Windows.Forms.Label();
             this.lblThick = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblOrder = new System.Windows.Forms.Label();
+            this.orderList = new System.Windows.Forms.ListBox();
             this.thinBox.SuspendLayout();
             this.thickBox.SuspendLayout();
             this.deepBase.SuspendLayout();
@@ -206,11 +208,37 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Chicago pizza, baked for maximum taste!\r\n£6.99";
             // 
+            // lblOrder
+            // 
+            this.lblOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblOrder.AutoSize = true;
+            this.lblOrder.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.lblOrder.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrder.Location = new System.Drawing.Point(1013, 0);
+            this.lblOrder.Name = "lblOrder";
+            this.lblOrder.Size = new System.Drawing.Size(118, 29);
+            this.lblOrder.TabIndex = 5;
+            this.lblOrder.Text = "My Order";
+            this.lblOrder.MouseEnter += new System.EventHandler(this.LblOrder_MouseEnter);
+            this.lblOrder.MouseLeave += new System.EventHandler(this.LblOrder_MouseLeave);
+            // 
+            // orderList
+            // 
+            this.orderList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.orderList.FormattingEnabled = true;
+            this.orderList.Location = new System.Drawing.Point(956, 29);
+            this.orderList.Name = "orderList";
+            this.orderList.Size = new System.Drawing.Size(175, 160);
+            this.orderList.TabIndex = 6;
+            this.orderList.Visible = false;
+            // 
             // PizzaBaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 588);
+            this.Controls.Add(this.orderList);
+            this.Controls.Add(this.lblOrder);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.deepBase);
@@ -248,5 +276,7 @@
         private System.Windows.Forms.Label lblThin;
         private System.Windows.Forms.Label lblThick;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblOrder;
+        private System.Windows.Forms.ListBox orderList;
     }
 }
