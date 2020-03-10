@@ -45,9 +45,9 @@
             this.orderList = new System.Windows.Forms.ListBox();
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.pizzabaseTab = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.toppingsTab = new System.Windows.Forms.TabPage();
+            this.StarterPage = new System.Windows.Forms.TabPage();
+            this.SweetTab = new System.Windows.Forms.TabPage();
             this.pizzaBaseLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.thinBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -235,9 +235,9 @@
             // mainTabControl
             // 
             this.mainTabControl.Controls.Add(this.pizzabaseTab);
-            this.mainTabControl.Controls.Add(this.tabPage2);
-            this.mainTabControl.Controls.Add(this.tabPage3);
-            this.mainTabControl.Controls.Add(this.tabPage4);
+            this.mainTabControl.Controls.Add(this.toppingsTab);
+            this.mainTabControl.Controls.Add(this.StarterPage);
+            this.mainTabControl.Controls.Add(this.SweetTab);
             this.mainTabControl.Location = new System.Drawing.Point(1, 0);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
@@ -255,35 +255,35 @@
             this.pizzabaseTab.Text = "Pizza Base";
             this.pizzabaseTab.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // toppingsTab
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1122, 562);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.toppingsTab.Location = new System.Drawing.Point(4, 22);
+            this.toppingsTab.Name = "toppingsTab";
+            this.toppingsTab.Padding = new System.Windows.Forms.Padding(3);
+            this.toppingsTab.Size = new System.Drawing.Size(1122, 562);
+            this.toppingsTab.TabIndex = 1;
+            this.toppingsTab.Text = "Toppings";
+            this.toppingsTab.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // StarterPage
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1122, 562);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.StarterPage.Location = new System.Drawing.Point(4, 22);
+            this.StarterPage.Name = "StarterPage";
+            this.StarterPage.Padding = new System.Windows.Forms.Padding(3);
+            this.StarterPage.Size = new System.Drawing.Size(1122, 562);
+            this.StarterPage.TabIndex = 2;
+            this.StarterPage.Text = "Starters";
+            this.StarterPage.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // SweetTab
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1122, 562);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.SweetTab.Location = new System.Drawing.Point(4, 22);
+            this.SweetTab.Name = "SweetTab";
+            this.SweetTab.Padding = new System.Windows.Forms.Padding(3);
+            this.SweetTab.Size = new System.Drawing.Size(1122, 562);
+            this.SweetTab.TabIndex = 3;
+            this.SweetTab.Text = "Sweet";
+            this.SweetTab.UseVisualStyleBackColor = true;
             // 
             // pizzaBaseLayoutPanel
             // 
@@ -343,9 +343,9 @@
         private System.Windows.Forms.ListBox orderList;
         private System.Windows.Forms.TabControl mainTabControl;
         private System.Windows.Forms.TabPage pizzabaseTab;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage toppingsTab;
+        private System.Windows.Forms.TabPage StarterPage;
+        private System.Windows.Forms.TabPage SweetTab;
         private System.Windows.Forms.FlowLayoutPanel pizzaBaseLayoutPanel;
     }
 }
