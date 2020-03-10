@@ -9,15 +9,5 @@ namespace PizzaApplication.Classes
     public class Order
     {
         public List<Item> Items = new List<Item>();
-
-        public float TotalCost()
-        {
-            float totalCost = 0;
-            foreach(Item item in Items)
-            {
-                totalCost += item.ItemCost;
-            }
-            return totalCost;
-        }
     }
 }

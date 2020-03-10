@@ -16,10 +16,9 @@ namespace PizzaApplication.Managers
             listBox.Items.Clear();   
             foreach(Item item in UserData.order.Items)
             {
-                listBox.Items.Add($"{item.ItemName} ({item.ItemType}) - £{item.ItemCost.ToString("F2")}");
+                listBox.Items.Add($"{item.ItemName} ({item.ItemType})");
                 listBox.Items.Add(string.Empty);
             }
-            listBox.Items.Add($"Total: £{UserData.order.TotalCost().ToString("F2")}");
         }
     }
 }

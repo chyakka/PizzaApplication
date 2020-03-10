@@ -15,6 +15,9 @@ namespace PizzaApplication
     public partial class PizzaBaseForm : Form
     {
         public Item SelectedBase { get; set; }
+        public Item SelectedStarter { get; set; }
+        public Item SelectedSweet { get; set; }
+        public List<Item> SelectedToppings { get; set; }
 
         public PizzaBaseForm()
         {
@@ -25,7 +28,7 @@ namespace PizzaApplication
         /* Sets all of our group boxes to their default desired unchosen colour */
         private void ResetGroupBoxColours()
         {
-            foreach (Control groupbox in Controls)
+            foreach (Control groupbox in pizzaBaseLayoutPanel.Controls)
             {
                 if (groupbox.GetType() == typeof(GroupBox))
                 {
@@ -40,7 +43,7 @@ namespace PizzaApplication
             if (SelectedBase == null || SelectedBase.ItemName != "Thin Pizza Base")
             {
                 if (SelectedBase != null && UserData.order.Items.Contains(SelectedBase)) UserData.order.Items.Remove(SelectedBase);
-                SelectedBase = new Item("Thin Pizza Base", 3.99f, Item.Type.Base);
+                SelectedBase = new Item("Thin Pizza Base", Item.Type.Base);
                 UserData.order.Items.Add(SelectedBase);
                 BasketManager.UpdateBasketDisplay(orderList);
                 ChangeSelectedBase(btnThin);
@@ -53,7 +56,7 @@ namespace PizzaApplication
             if (SelectedBase == null || SelectedBase.ItemName != "Thick Pizza Base")
             {
                 if (SelectedBase != null && UserData.order.Items.Contains(SelectedBase)) UserData.order.Items.Remove(SelectedBase);
-                SelectedBase = new Item("Thick Pizza Base", 5.99f, Item.Type.Base);
+                SelectedBase = new Item("Thick Pizza Base", Item.Type.Base);
                 UserData.order.Items.Add(SelectedBase);
                 BasketManager.UpdateBasketDisplay(orderList);
                 ChangeSelectedBase(btnThick);
@@ -65,7 +68,7 @@ namespace PizzaApplication
             if (SelectedBase == null || SelectedBase.ItemName != "Chicago Base")
             {
                 if (SelectedBase != null && UserData.order.Items.Contains(SelectedBase)) UserData.order.Items.Remove(SelectedBase);
-                SelectedBase = new Item("Chicago Base", 6.99f, Item.Type.Base);
+                SelectedBase = new Item("Chicago Base", Item.Type.Base);
                 UserData.order.Items.Add(SelectedBase);
                 BasketManager.UpdateBasketDisplay(orderList);
                 ChangeSelectedBase(btnDeep);
@@ -75,7 +78,7 @@ namespace PizzaApplication
         /* Visually updates the controls when a new selection is done */
         private void ChangeSelectedBase(Control control)
         {
-            foreach(Control groupbox in Controls)
+            foreach(Control groupbox in pizzaBaseLayoutPanel.Controls)
             {
                 if(groupbox.GetType() == typeof(GroupBox))
                 {
@@ -93,7 +96,7 @@ namespace PizzaApplication
             }
             else
             {
-                DialogResult result = MessageBox.Show($"You have chosen {SelectedBase.ItemName} as your pizza base, continue?", "Confirm", MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show($"Ensure you have reviewed your order before continuing!", "Confirm", MessageBoxButtons.YesNo);
                 if(result == DialogResult.Yes)
                 {
                     //continue
@@ -124,6 +127,10 @@ namespace PizzaApplication
         private void LblOrder_MouseLeave(object sender, EventArgs e)
         {
             orderList.Visible = false;
+        }
+
+        private void PizzaBaseForm_Load(object sender, EventArgs e)
+        {
         }
     }
 }
