@@ -17,8 +17,8 @@ namespace PizzaApplication.Managers
             foreach(Item item in UserData.order.Items)
             {
                 listBox.Items.Add($"{item.ItemName} ({item.ItemType})");
-                listBox.Items.Add(string.Empty);
             }
+            listBox.Items.Add(string.Empty);
         }
     }
 }

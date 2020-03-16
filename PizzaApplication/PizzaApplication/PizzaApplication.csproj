@@ -106,5 +106,38 @@
   <ItemGroup>
     <None Include="Resources\chicago1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepperoni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bacon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheese.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushroom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ham.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olives.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chickenwing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mozzarellasticks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salad.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

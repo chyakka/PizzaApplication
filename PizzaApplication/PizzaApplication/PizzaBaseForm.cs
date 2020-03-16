@@ -17,7 +17,6 @@ namespace PizzaApplication
         public Item SelectedBase { get; set; }
         public Item SelectedStarter { get; set; }
         public Item SelectedSweet { get; set; }
-        public List<Item> SelectedToppings { get; set; }
 
         public PizzaBaseForm()
         {
@@ -25,10 +24,26 @@ namespace PizzaApplication
             ResetGroupBoxColours();
         }
 
-        /* Sets all of our group boxes to their default desired unchosen colour */
+        /* Sets all of our group boxes to their default desired unchosen colour - this could be done manually in the editor but this would be slower. */
         private void ResetGroupBoxColours()
         {
             foreach (Control groupbox in pizzaBaseLayoutPanel.Controls)
+            {
+                if (groupbox.GetType() == typeof(GroupBox))
+                {
+                    groupbox.BackColor = Color.LightGray;
+                }
+            }
+
+            foreach(Control groupbox in toppingLayoutPanel.Controls)
+            {
+                if(groupbox.GetType() == typeof(GroupBox))
+                {
+                    groupbox.BackColor = Color.LightGray;
+                }
+            }
+
+            foreach(Control groupbox in starterLayoutPanel.Controls)
             {
                 if (groupbox.GetType() == typeof(GroupBox))
                 {
@@ -88,6 +103,18 @@ namespace PizzaApplication
             control.Parent.BackColor = Color.FloralWhite;
         }
 
+        private void ChangeSelectedStarter(Control control)
+        {
+            foreach (Control groupbox in starterLayoutPanel.Controls)
+            {
+                if (groupbox.GetType() == typeof(GroupBox))
+                {
+                    groupbox.BackColor = Color.LightGray;
+                }
+            }
+            control.BackColor = Color.FloralWhite;
+        }
+
         private void BtnContinue_Click(object sender, EventArgs e)
         {
             if(SelectedBase == null)
@@ -129,8 +156,217 @@ namespace PizzaApplication
             orderList.Visible = false;
         }
 
-        private void PizzaBaseForm_Load(object sender, EventArgs e)
+        private void btnPepperoni_Click(object sender, EventArgs e)
         {
+            if (SelectedBase != null)
+            {
+                if (UserData.order.ContainsItem("Pepperoni Topping"))
+                {
+                    btnPepperoni.Parent.BackColor = Color.LightGray;
+                    UserData.order.RemoveItem("Pepperoni Topping");
+                }
+                else
+                {
+                    UserData.order.Items.Add(new Item("Pepperoni Topping", Item.Type.Topping));
+                    btnPepperoni.Parent.BackColor = Color.FloralWhite;
+                }
+                BasketManager.UpdateBasketDisplay(orderList);
+            }
+            else
+            {
+                MessageBox.Show("Select a pizza base before choosing your toppings!");
+            }
+        }
+
+        private void btnOlives_Click(object sender, EventArgs e)
+        {
+            if (SelectedBase != null)
+            {
+                if (UserData.order.ContainsItem("Olive Topping"))
+                {
+                    btnOlives.Parent.BackColor = Color.LightGray;
+                    UserData.order.RemoveItem("Olive Topping");
+                }
+                else
+                {
+                    UserData.order.Items.Add(new Item("Olive Topping", Item.Type.Topping));
+                    btnOlives.Parent.BackColor = Color.FloralWhite;
+                }
+                BasketManager.UpdateBasketDisplay(orderList);
+            }
+            else
+            {
+                MessageBox.Show("Select a pizza base before choosing your toppings!");
+            }
+        }
+
+        private void btnPeppers_Click(object sender, EventArgs e)
+        {
+            if (SelectedBase != null)
+            {
+                if (UserData.order.ContainsItem("Pepper Topping"))
+                {
+                    btnPeppers.Parent.BackColor = Color.LightGray;
+                    UserData.order.RemoveItem("Pepper Topping");
+                }
+                else
+                {
+                    UserData.order.Items.Add(new Item("Pepper Topping", Item.Type.Topping));
+                    btnPeppers.Parent.BackColor = Color.FloralWhite;
+                }
+                BasketManager.UpdateBasketDisplay(orderList);
+            }
+            else
+            {
+                MessageBox.Show("Select a pizza base before choosing your toppings!");
+            }
+        }
+
+        private void btnHam_Click(object sender, EventArgs e)
+        {
+            if (SelectedBase != null)
+            {
+                if (UserData.order.ContainsItem("Ham Topping"))
+                {
+                    btnHam.Parent.BackColor = Color.LightGray;
+                    UserData.order.RemoveItem("Ham Topping");
+                }
+                else
+                {
+                    UserData.order.Items.Add(new Item("Ham Topping", Item.Type.Topping));
+                    btnHam.Parent.BackColor = Color.FloralWhite;
+                }
+                BasketManager.UpdateBasketDisplay(orderList);
+            }
+            else
+            {
+                MessageBox.Show("Select a pizza base before choosing your toppings!");
+            }
+        }
+
+        private void btnMushroom_Click(object sender, EventArgs e)
+        {
+            if (SelectedBase != null)
+            {
+                if (UserData.order.ContainsItem("Mushroom Topping"))
+                {
+                    btnMushroom.Parent.BackColor = Color.LightGray;
+                    UserData.order.RemoveItem("Mushroom Topping");
+                }
+                else
+                {
+                    UserData.order.Items.Add(new Item("Mushroom Topping", Item.Type.Topping));
+                    btnMushroom.Parent.BackColor = Color.FloralWhite;
+                }
+                BasketManager.UpdateBasketDisplay(orderList);
+            }
+            else
+            {
+                MessageBox.Show("Select a pizza base before choosing your toppings!");
+            }
+        }
+
+        private void btnExtraCheese_Click(object sender, EventArgs e)
+        {
+            if (SelectedBase != null)
+            {
+                if (UserData.order.ContainsItem("Extra Cheese Topping"))
+                {
+                    btnExtraCheese.Parent.BackColor = Color.LightGray;
+                    UserData.order.RemoveItem("Extra Cheese Topping");
+                }
+                else
+                {
+                    UserData.order.Items.Add(new Item("Extra Cheese Topping", Item.Type.Topping));
+                    btnExtraCheese.Parent.BackColor = Color.FloralWhite;
+                }
+                BasketManager.UpdateBasketDisplay(orderList);
+            }
+            else
+            {
+                MessageBox.Show("Select a pizza base before choosing your toppings!");
+            }
+        }
+
+        private void btnBacon_Click(object sender, EventArgs e)
+        {
+            if (SelectedBase != null)
+            {
+                if (UserData.order.ContainsItem("Bacon Topping"))
+                {
+                    btnBacon.Parent.BackColor = Color.LightGray;
+                    UserData.order.RemoveItem("Bacon Topping");
+                }
+                else
+                {
+                    UserData.order.Items.Add(new Item("Bacon Topping", Item.Type.Topping));
+                    btnBacon.Parent.BackColor = Color.FloralWhite;
+                }
+                BasketManager.UpdateBasketDisplay(orderList);
+            }
+            else
+            {
+                MessageBox.Show("Select a pizza base before choosing your toppings!");
+            }
+        }
+
+        private void btnChicken_Click(object sender, EventArgs e)
+        {
+            if (SelectedBase != null)
+            {
+                if (UserData.order.ContainsItem("Chicken Topping"))
+                {
+                    btnChicken.Parent.BackColor = Color.LightGray;
+                    UserData.order.RemoveItem("Chicken Topping");
+                }
+                else
+                {
+                    UserData.order.Items.Add(new Item("Chicken Topping", Item.Type.Topping));
+                    btnChicken.Parent.BackColor = Color.FloralWhite;
+                }
+                BasketManager.UpdateBasketDisplay(orderList);
+            }
+            else
+            {
+                MessageBox.Show("Select a pizza base before choosing your toppings!");
+            }
+        }
+
+        private void btnChickenWing_Click(object sender, EventArgs e)
+        {
+            /* Similarly repeated logic for the pizza base */
+            if (SelectedStarter == null || SelectedStarter.ItemName != "Chicken Wings")
+            {
+                if (SelectedStarter != null && UserData.order.Items.Contains(SelectedStarter)) UserData.order.Items.Remove(SelectedStarter);
+                SelectedStarter = new Item("Chicken Wings", Item.Type.Starter);
+                UserData.order.Items.Add(SelectedStarter);
+                BasketManager.UpdateBasketDisplay(orderList);
+                ChangeSelectedStarter(chickenwingGroupBox);
+            }
+        }
+
+        private void btnMozzarellaSticks_Click(object sender, EventArgs e)
+        {
+            if (SelectedStarter == null || SelectedStarter.ItemName != "Mozzarella Sticks")
+            {
+                if (SelectedStarter != null && UserData.order.Items.Contains(SelectedStarter)) UserData.order.Items.Remove(SelectedStarter);
+                SelectedStarter = new Item("Mozzarella Sticks", Item.Type.Starter);
+                UserData.order.Items.Add(SelectedStarter);
+                BasketManager.UpdateBasketDisplay(orderList);
+                ChangeSelectedStarter(mozzarellaGroupBox);
+            }
+        }
+
+        private void btnSalad_Click(object sender, EventArgs e)
+        {
+            if(SelectedStarter == null || SelectedStarter.ItemName != "Salad")
+            {
+                if (SelectedStarter != null && UserData.order.Items.Contains(SelectedStarter)) UserData.order.Items.Remove(SelectedStarter);
+                SelectedStarter = new Item("Salad", Item.Type.Starter);
+                UserData.order.Items.Add(SelectedStarter);
+                BasketManager.UpdateBasketDisplay(orderList);
+                ChangeSelectedStarter(saladGroupBox);
+            }
         }
     }
 }
