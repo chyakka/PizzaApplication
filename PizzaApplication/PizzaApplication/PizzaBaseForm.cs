@@ -50,6 +50,14 @@ namespace PizzaApplication
                     groupbox.BackColor = Color.LightGray;
                 }
             }
+
+            foreach (Control groupbox in sweetLayoutPanel.Controls)
+            {
+                if (groupbox.GetType() == typeof(GroupBox))
+                {
+                    groupbox.BackColor = Color.LightGray;
+                }
+            }
         }
 
         private void BtnThin_Click(object sender, EventArgs e)
@@ -106,6 +114,18 @@ namespace PizzaApplication
         private void ChangeSelectedStarter(Control control)
         {
             foreach (Control groupbox in starterLayoutPanel.Controls)
+            {
+                if (groupbox.GetType() == typeof(GroupBox))
+                {
+                    groupbox.BackColor = Color.LightGray;
+                }
+            }
+            control.BackColor = Color.FloralWhite;
+        }
+
+        private void ChangeSelectedSweet(Control control)
+        {
+            foreach (Control groupbox in sweetLayoutPanel.Controls)
             {
                 if (groupbox.GetType() == typeof(GroupBox))
                 {
@@ -366,6 +386,65 @@ namespace PizzaApplication
                 UserData.order.Items.Add(SelectedStarter);
                 BasketManager.UpdateBasketDisplay(orderList);
                 ChangeSelectedStarter(saladGroupBox);
+            }
+        }
+
+        private void btnIceCream_Click(object sender, EventArgs e)
+        {
+            if (SelectedSweet == null || SelectedSweet.ItemName != "Ice Cream")
+            {
+                if (SelectedSweet != null && UserData.order.Items.Contains(SelectedSweet)) UserData.order.Items.Remove(SelectedSweet);
+                SelectedSweet = new Item("Ice Cream", Item.Type.Sweet);
+                UserData.order.Items.Add(SelectedSweet);
+                BasketManager.UpdateBasketDisplay(orderList);
+                ChangeSelectedSweet(icecreamGroupBox);
+            }
+        }
+
+        private void btnChocolateCake_Click(object sender, EventArgs e)
+        {
+            if (SelectedSweet == null || SelectedSweet.ItemName != "Chocolate Cake")
+            {
+                if (SelectedSweet != null && UserData.order.Items.Contains(SelectedSweet)) UserData.order.Items.Remove(SelectedSweet);
+                SelectedSweet = new Item("Chocolate Cake", Item.Type.Sweet);
+                UserData.order.Items.Add(SelectedSweet);
+                BasketManager.UpdateBasketDisplay(orderList);
+                ChangeSelectedSweet(chocolatecakeGroupBox);
+            }
+        }
+
+        private void btnCheesecake_Click(object sender, EventArgs e)
+        {
+            if (SelectedSweet == null || SelectedSweet.ItemName != "Cheese Cake")
+            {
+                if (SelectedSweet != null && UserData.order.Items.Contains(SelectedSweet)) UserData.order.Items.Remove(SelectedSweet);
+                SelectedSweet = new Item("Cheese Cake", Item.Type.Sweet);
+                UserData.order.Items.Add(SelectedSweet);
+                BasketManager.UpdateBasketDisplay(orderList);
+                ChangeSelectedSweet(cheesecakeGroupBox);
+            }
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            if (UserData.order.Items.Count == 0) MessageBox.Show("You need to have items in your order to proceed.", "Error");
+
+            DialogResult dialogResult = MessageBox.Show("Pressing yes will confirm your order and close the application, continue?", "Confirm", MessageBoxButtons.YesNo);
+            if(dialogResult == DialogResult.Yes)
+            {
+                Close();
+            }
+        }
+
+        private void mainTabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(mainTabControl.SelectedTab.Text == "Confirm Order")
+            {
+                finalOrderListBox.Items.Clear();
+                foreach(Item item in UserData.order.Items)
+                {
+                    finalOrderListBox.Items.Add($"{item.ItemName} ({item.ItemType})");
+                }
             }
         }
     }

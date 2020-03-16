@@ -37,7 +37,6 @@
             this.deepBase = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnDeep = new System.Windows.Forms.Button();
-            this.btnContinue = new System.Windows.Forms.Button();
             this.lblOrder = new System.Windows.Forms.Label();
             this.orderList = new System.Windows.Forms.ListBox();
             this.mainTabControl = new System.Windows.Forms.TabControl();
@@ -70,6 +69,13 @@
             this.btnSalad = new System.Windows.Forms.Button();
             this.mozzarellaGroupBox = new System.Windows.Forms.GroupBox();
             this.btnMozzarellaSticks = new System.Windows.Forms.Button();
+            this.sweetLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.icecreamGroupBox = new System.Windows.Forms.GroupBox();
+            this.btnIceCream = new System.Windows.Forms.Button();
+            this.chocolatecakeGroupBox = new System.Windows.Forms.GroupBox();
+            this.btnChocolateCake = new System.Windows.Forms.Button();
+            this.cheesecakeGroupBox = new System.Windows.Forms.GroupBox();
+            this.btnCheesecake = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -84,6 +90,13 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.confirmOrderPage = new System.Windows.Forms.TabPage();
+            this.finalOrderListBox = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnOrder = new System.Windows.Forms.Button();
             this.thinBox.SuspendLayout();
             this.thickBox.SuspendLayout();
             this.deepBase.SuspendLayout();
@@ -101,10 +114,15 @@
             this.baconGroupBox.SuspendLayout();
             this.chickenGroupBox.SuspendLayout();
             this.StarterPage.SuspendLayout();
+            this.SweetTab.SuspendLayout();
             this.starterLayoutPanel.SuspendLayout();
             this.chickenwingGroupBox.SuspendLayout();
             this.saladGroupBox.SuspendLayout();
             this.mozzarellaGroupBox.SuspendLayout();
+            this.sweetLayoutPanel.SuspendLayout();
+            this.icecreamGroupBox.SuspendLayout();
+            this.chocolatecakeGroupBox.SuspendLayout();
+            this.cheesecakeGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -119,6 +137,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            this.confirmOrderPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // thinBox
@@ -226,18 +248,6 @@
             this.btnDeep.UseWaitCursor = true;
             this.btnDeep.Click += new System.EventHandler(this.BtnDeep_Click);
             // 
-            // btnContinue
-            // 
-            this.btnContinue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnContinue.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContinue.Location = new System.Drawing.Point(936, 524);
-            this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(182, 52);
-            this.btnContinue.TabIndex = 4;
-            this.btnContinue.Text = "CONTINUE >";
-            this.btnContinue.UseVisualStyleBackColor = true;
-            this.btnContinue.Click += new System.EventHandler(this.BtnContinue_Click);
-            // 
             // lblOrder
             // 
             this.lblOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -268,11 +278,13 @@
             this.mainTabControl.Controls.Add(this.toppingsTab);
             this.mainTabControl.Controls.Add(this.StarterPage);
             this.mainTabControl.Controls.Add(this.SweetTab);
+            this.mainTabControl.Controls.Add(this.confirmOrderPage);
             this.mainTabControl.Location = new System.Drawing.Point(1, 0);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
             this.mainTabControl.Size = new System.Drawing.Size(949, 518);
             this.mainTabControl.TabIndex = 0;
+            this.mainTabControl.SelectedIndexChanged += new System.EventHandler(this.mainTabControl_SelectedIndexChanged);
             // 
             // pizzabaseTab
             // 
@@ -301,7 +313,7 @@
             this.toppingsTab.Location = new System.Drawing.Point(4, 22);
             this.toppingsTab.Name = "toppingsTab";
             this.toppingsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.toppingsTab.Size = new System.Drawing.Size(941, 518);
+            this.toppingsTab.Size = new System.Drawing.Size(941, 492);
             this.toppingsTab.TabIndex = 1;
             this.toppingsTab.Text = "Toppings";
             this.toppingsTab.UseVisualStyleBackColor = true;
@@ -503,19 +515,20 @@
             this.StarterPage.Location = new System.Drawing.Point(4, 22);
             this.StarterPage.Name = "StarterPage";
             this.StarterPage.Padding = new System.Windows.Forms.Padding(3);
-            this.StarterPage.Size = new System.Drawing.Size(941, 518);
+            this.StarterPage.Size = new System.Drawing.Size(941, 492);
             this.StarterPage.TabIndex = 2;
             this.StarterPage.Text = "Starters";
             this.StarterPage.UseVisualStyleBackColor = true;
             // 
             // SweetTab
             // 
+            this.SweetTab.Controls.Add(this.sweetLayoutPanel);
             this.SweetTab.Location = new System.Drawing.Point(4, 22);
             this.SweetTab.Name = "SweetTab";
             this.SweetTab.Padding = new System.Windows.Forms.Padding(3);
-            this.SweetTab.Size = new System.Drawing.Size(941, 518);
+            this.SweetTab.Size = new System.Drawing.Size(941, 492);
             this.SweetTab.TabIndex = 3;
-            this.SweetTab.Text = "Sweet";
+            this.SweetTab.Text = "Sweets";
             this.SweetTab.UseVisualStyleBackColor = true;
             // 
             // starterLayoutPanel
@@ -590,6 +603,84 @@
             this.btnMozzarellaSticks.Text = "Select";
             this.btnMozzarellaSticks.UseVisualStyleBackColor = true;
             this.btnMozzarellaSticks.Click += new System.EventHandler(this.btnMozzarellaSticks_Click);
+            // 
+            // sweetLayoutPanel
+            // 
+            this.sweetLayoutPanel.Controls.Add(this.icecreamGroupBox);
+            this.sweetLayoutPanel.Controls.Add(this.chocolatecakeGroupBox);
+            this.sweetLayoutPanel.Controls.Add(this.cheesecakeGroupBox);
+            this.sweetLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            this.sweetLayoutPanel.Name = "sweetLayoutPanel";
+            this.sweetLayoutPanel.Size = new System.Drawing.Size(941, 492);
+            this.sweetLayoutPanel.TabIndex = 0;
+            // 
+            // icecreamGroupBox
+            // 
+            this.icecreamGroupBox.Controls.Add(this.btnIceCream);
+            this.icecreamGroupBox.Controls.Add(this.pictureBox15);
+            this.icecreamGroupBox.Location = new System.Drawing.Point(3, 3);
+            this.icecreamGroupBox.Name = "icecreamGroupBox";
+            this.icecreamGroupBox.Size = new System.Drawing.Size(304, 235);
+            this.icecreamGroupBox.TabIndex = 0;
+            this.icecreamGroupBox.TabStop = false;
+            this.icecreamGroupBox.Text = "Ice Cream";
+            this.icecreamGroupBox.UseWaitCursor = true;
+            // 
+            // btnIceCream
+            // 
+            this.btnIceCream.Location = new System.Drawing.Point(221, 206);
+            this.btnIceCream.Name = "btnIceCream";
+            this.btnIceCream.Size = new System.Drawing.Size(75, 23);
+            this.btnIceCream.TabIndex = 1;
+            this.btnIceCream.Text = "Select";
+            this.btnIceCream.UseVisualStyleBackColor = true;
+            this.btnIceCream.Click += new System.EventHandler(this.btnIceCream_Click);
+            // 
+            // chocolatecakeGroupBox
+            // 
+            this.chocolatecakeGroupBox.Controls.Add(this.btnChocolateCake);
+            this.chocolatecakeGroupBox.Controls.Add(this.pictureBox16);
+            this.chocolatecakeGroupBox.Location = new System.Drawing.Point(313, 3);
+            this.chocolatecakeGroupBox.Name = "chocolatecakeGroupBox";
+            this.chocolatecakeGroupBox.Size = new System.Drawing.Size(304, 235);
+            this.chocolatecakeGroupBox.TabIndex = 2;
+            this.chocolatecakeGroupBox.TabStop = false;
+            this.chocolatecakeGroupBox.Text = "Chocolate Cake";
+            this.chocolatecakeGroupBox.UseWaitCursor = true;
+            // 
+            // btnChocolateCake
+            // 
+            this.btnChocolateCake.Location = new System.Drawing.Point(221, 206);
+            this.btnChocolateCake.Name = "btnChocolateCake";
+            this.btnChocolateCake.Size = new System.Drawing.Size(75, 23);
+            this.btnChocolateCake.TabIndex = 1;
+            this.btnChocolateCake.Text = "Select";
+            this.btnChocolateCake.UseVisualStyleBackColor = true;
+            this.btnChocolateCake.UseWaitCursor = true;
+            this.btnChocolateCake.Click += new System.EventHandler(this.btnChocolateCake_Click);
+            // 
+            // cheesecakeGroupBox
+            // 
+            this.cheesecakeGroupBox.Controls.Add(this.btnCheesecake);
+            this.cheesecakeGroupBox.Controls.Add(this.pictureBox17);
+            this.cheesecakeGroupBox.Location = new System.Drawing.Point(623, 3);
+            this.cheesecakeGroupBox.Name = "cheesecakeGroupBox";
+            this.cheesecakeGroupBox.Size = new System.Drawing.Size(304, 235);
+            this.cheesecakeGroupBox.TabIndex = 3;
+            this.cheesecakeGroupBox.TabStop = false;
+            this.cheesecakeGroupBox.Text = "Cheese Cake";
+            this.cheesecakeGroupBox.UseWaitCursor = true;
+            // 
+            // btnCheesecake
+            // 
+            this.btnCheesecake.Location = new System.Drawing.Point(221, 206);
+            this.btnCheesecake.Name = "btnCheesecake";
+            this.btnCheesecake.Size = new System.Drawing.Size(75, 23);
+            this.btnCheesecake.TabIndex = 1;
+            this.btnCheesecake.Text = "Select";
+            this.btnCheesecake.UseVisualStyleBackColor = true;
+            this.btnCheesecake.UseWaitCursor = true;
+            this.btnCheesecake.Click += new System.EventHandler(this.btnCheesecake_Click);
             // 
             // pictureBox1
             // 
@@ -732,12 +823,88 @@
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
             // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImage = global::PizzaApplication.Properties.Resources.icecream;
+            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox15.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(291, 180);
+            this.pictureBox15.TabIndex = 0;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackgroundImage = global::PizzaApplication.Properties.Resources.chocolatecake;
+            this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox16.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(291, 180);
+            this.pictureBox16.TabIndex = 0;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.UseWaitCursor = true;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackgroundImage = global::PizzaApplication.Properties.Resources.cheesecake;
+            this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox17.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(291, 180);
+            this.pictureBox17.TabIndex = 0;
+            this.pictureBox17.TabStop = false;
+            this.pictureBox17.UseWaitCursor = true;
+            // 
+            // confirmOrderPage
+            // 
+            this.confirmOrderPage.Controls.Add(this.btnOrder);
+            this.confirmOrderPage.Controls.Add(this.label1);
+            this.confirmOrderPage.Controls.Add(this.finalOrderListBox);
+            this.confirmOrderPage.Location = new System.Drawing.Point(4, 22);
+            this.confirmOrderPage.Name = "confirmOrderPage";
+            this.confirmOrderPage.Padding = new System.Windows.Forms.Padding(3);
+            this.confirmOrderPage.Size = new System.Drawing.Size(941, 492);
+            this.confirmOrderPage.TabIndex = 4;
+            this.confirmOrderPage.Text = "Confirm Order";
+            this.confirmOrderPage.UseVisualStyleBackColor = true;
+            // 
+            // finalOrderListBox
+            // 
+            this.finalOrderListBox.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalOrderListBox.FormattingEnabled = true;
+            this.finalOrderListBox.ItemHeight = 18;
+            this.finalOrderListBox.Location = new System.Drawing.Point(258, 72);
+            this.finalOrderListBox.Name = "finalOrderListBox";
+            this.finalOrderListBox.Size = new System.Drawing.Size(414, 274);
+            this.finalOrderListBox.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(382, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(182, 28);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Order Summary";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnOrder
+            // 
+            this.btnOrder.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.Location = new System.Drawing.Point(414, 352);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(103, 35);
+            this.btnOrder.TabIndex = 2;
+            this.btnOrder.Text = "Order";
+            this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
+            // 
             // PizzaBaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 588);
-            this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.lblOrder);
             this.Controls.Add(this.orderList);
             this.Controls.Add(this.mainTabControl);
@@ -763,10 +930,15 @@
             this.baconGroupBox.ResumeLayout(false);
             this.chickenGroupBox.ResumeLayout(false);
             this.StarterPage.ResumeLayout(false);
+            this.SweetTab.ResumeLayout(false);
             this.starterLayoutPanel.ResumeLayout(false);
             this.chickenwingGroupBox.ResumeLayout(false);
             this.saladGroupBox.ResumeLayout(false);
             this.mozzarellaGroupBox.ResumeLayout(false);
+            this.sweetLayoutPanel.ResumeLayout(false);
+            this.icecreamGroupBox.ResumeLayout(false);
+            this.chocolatecakeGroupBox.ResumeLayout(false);
+            this.cheesecakeGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -781,6 +953,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            this.confirmOrderPage.ResumeLayout(false);
+            this.confirmOrderPage.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -797,7 +974,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.Label lblThin;
         private System.Windows.Forms.Label lblThick;
         private System.Windows.Forms.Label label2;
@@ -844,5 +1020,19 @@
         private System.Windows.Forms.GroupBox saladGroupBox;
         private System.Windows.Forms.Button btnSalad;
         private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.FlowLayoutPanel sweetLayoutPanel;
+        private System.Windows.Forms.GroupBox icecreamGroupBox;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.Button btnIceCream;
+        private System.Windows.Forms.GroupBox chocolatecakeGroupBox;
+        private System.Windows.Forms.Button btnChocolateCake;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.GroupBox cheesecakeGroupBox;
+        private System.Windows.Forms.Button btnCheesecake;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.TabPage confirmOrderPage;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox finalOrderListBox;
+        private System.Windows.Forms.Button btnOrder;
     }
 }

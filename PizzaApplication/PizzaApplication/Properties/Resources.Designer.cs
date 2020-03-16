@@ -83,6 +83,16 @@ namespace PizzaApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cheesecake {
+            get {
+                object obj = ResourceManager.GetObject("cheesecake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chicago {
             get {
                 object obj = ResourceManager.GetObject("chicago", resourceCulture);
@@ -123,9 +133,29 @@ namespace PizzaApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chocolatecake {
+            get {
+                object obj = ResourceManager.GetObject("chocolatecake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ham {
             get {
                 object obj = ResourceManager.GetObject("ham", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icecream {
+            get {
+                object obj = ResourceManager.GetObject("icecream", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -133,14 +133,23 @@
   <data name="thin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icecream" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="chickenwing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chickenwing.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pepper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pepper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="salad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cheese.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chocolatecake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chocolatecake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chicago" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chicago.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,7 +169,7 @@
   <data name="ham" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ham.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="salad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cheesecake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cheesecake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
