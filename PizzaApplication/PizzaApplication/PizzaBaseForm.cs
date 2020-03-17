@@ -14,9 +14,14 @@ namespace PizzaApplication
 {
     public partial class PizzaBaseForm : Form
     {
+        //Declaration of selected items that will only have one permitted value.
         public Item SelectedBase { get; set; }
         public Item SelectedStarter { get; set; }
         public Item SelectedSweet { get; set; }
+
+        //Constant declaration with 'const' keyword, our VAT rate will never change.
+        public const float VATRate = 20.0f;
+
 
         public PizzaBaseForm()
         {
@@ -65,6 +70,7 @@ namespace PizzaApplication
             /* Basic logic; checks if the base is equal to null i.e. not selected yet or if it's equal to what they are choosing, preventing redundant code */
             if (SelectedBase == null || SelectedBase.ItemName != "Thin Pizza Base")
             {
+                //Adds items where they need to be and visually updates the application
                 if (SelectedBase != null && UserData.order.Items.Contains(SelectedBase)) UserData.order.Items.Remove(SelectedBase);
                 SelectedBase = new Item("Thin Pizza Base", Item.Type.Base);
                 UserData.order.Items.Add(SelectedBase);
@@ -135,37 +141,6 @@ namespace PizzaApplication
             control.BackColor = Color.FloralWhite;
         }
 
-        private void BtnContinue_Click(object sender, EventArgs e)
-        {
-            if(SelectedBase == null)
-            {
-                MessageBox.Show("You can't proceed without choosing a base!", "Error", MessageBoxButtons.OK);
-            }
-            else
-            {
-                DialogResult result = MessageBox.Show($"Ensure you have reviewed your order before continuing!", "Confirm", MessageBoxButtons.YesNo);
-                if(result == DialogResult.Yes)
-                {
-                    //continue
-                }
-                else
-                {
-                    /* Abort from function, putting them back in control of the form. */
-                    return;
-                }
-            }
-        }
-
-        private void LblOrder_Enter(object sender, EventArgs e)
-        {
-            orderList.Visible = true;
-        }
-
-        private void LblOrder_Leave(object sender, EventArgs e)
-        {
-            orderList.Visible = false;
-        }
-
         private void LblOrder_MouseEnter(object sender, EventArgs e)
         {
             orderList.Visible = true;
@@ -178,6 +153,7 @@ namespace PizzaApplication
 
         private void btnPepperoni_Click(object sender, EventArgs e)
         {
+            /* Can't choose a topping if you don't have a pizza base */
             if (SelectedBase != null)
             {
                 if (UserData.order.ContainsItem("Pepperoni Topping"))
@@ -429,7 +405,8 @@ namespace PizzaApplication
         {
             if (UserData.order.Items.Count == 0) MessageBox.Show("You need to have items in your order to proceed.", "Error");
 
-            DialogResult dialogResult = MessageBox.Show("Pressing yes will confirm your order and close the application, continue?", "Confirm", MessageBoxButtons.YesNo);
+            //Confirms the order and closes the application.
+            DialogResult dialogResult = MessageBox.Show($"Order From:\n{UserData.user.UserName}\n{UserData.user.Address}, {UserData.user.PostCode}\n\nPressing yes will confirm your order, charge you for your order and a {VATRate}% VAT Charge and close the application, continue?", "Confirm", MessageBoxButtons.YesNo);
             if(dialogResult == DialogResult.Yes)
             {
                 Close();
@@ -438,6 +415,7 @@ namespace PizzaApplication
 
         private void mainTabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Updates the order list box when the tab is changed to the 'Confirm Order' tab
             if(mainTabControl.SelectedTab.Text == "Confirm Order")
             {
                 finalOrderListBox.Items.Clear();

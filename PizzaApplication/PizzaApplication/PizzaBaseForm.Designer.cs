@@ -30,12 +30,15 @@
         {
             this.thinBox = new System.Windows.Forms.GroupBox();
             this.lblThin = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnThin = new System.Windows.Forms.Button();
             this.thickBox = new System.Windows.Forms.GroupBox();
             this.lblThick = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnThick = new System.Windows.Forms.Button();
             this.deepBase = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnDeep = new System.Windows.Forms.Button();
             this.lblOrder = new System.Windows.Forms.Label();
             this.orderList = new System.Windows.Forms.ListBox();
@@ -46,99 +49,96 @@
             this.toppingLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.pepperoniGroupBox = new System.Windows.Forms.GroupBox();
             this.btnPepperoni = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.oliveGroupBox = new System.Windows.Forms.GroupBox();
             this.btnOlives = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pepperGroupBox = new System.Windows.Forms.GroupBox();
             this.btnPeppers = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.hamGroupBox = new System.Windows.Forms.GroupBox();
             this.btnHam = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.mushroomGroupBox = new System.Windows.Forms.GroupBox();
             this.btnMushroom = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.cheeseGroupBox = new System.Windows.Forms.GroupBox();
             this.btnExtraCheese = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.baconGroupBox = new System.Windows.Forms.GroupBox();
             this.btnBacon = new System.Windows.Forms.Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.chickenGroupBox = new System.Windows.Forms.GroupBox();
             this.btnChicken = new System.Windows.Forms.Button();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.StarterPage = new System.Windows.Forms.TabPage();
-            this.SweetTab = new System.Windows.Forms.TabPage();
             this.starterLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.chickenwingGroupBox = new System.Windows.Forms.GroupBox();
             this.btnChickenWing = new System.Windows.Forms.Button();
-            this.saladGroupBox = new System.Windows.Forms.GroupBox();
-            this.btnSalad = new System.Windows.Forms.Button();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.mozzarellaGroupBox = new System.Windows.Forms.GroupBox();
             this.btnMozzarellaSticks = new System.Windows.Forms.Button();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.saladGroupBox = new System.Windows.Forms.GroupBox();
+            this.btnSalad = new System.Windows.Forms.Button();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.SweetTab = new System.Windows.Forms.TabPage();
             this.sweetLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.icecreamGroupBox = new System.Windows.Forms.GroupBox();
             this.btnIceCream = new System.Windows.Forms.Button();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.chocolatecakeGroupBox = new System.Windows.Forms.GroupBox();
             this.btnChocolateCake = new System.Windows.Forms.Button();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.cheesecakeGroupBox = new System.Windows.Forms.GroupBox();
             this.btnCheesecake = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.confirmOrderPage = new System.Windows.Forms.TabPage();
-            this.finalOrderListBox = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnOrder = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.finalOrderListBox = new System.Windows.Forms.ListBox();
             this.thinBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.thickBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.deepBase.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.mainTabControl.SuspendLayout();
             this.pizzabaseTab.SuspendLayout();
             this.pizzaBaseLayoutPanel.SuspendLayout();
             this.toppingsTab.SuspendLayout();
             this.toppingLayoutPanel.SuspendLayout();
             this.pepperoniGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.oliveGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.pepperGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.hamGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.mushroomGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.cheeseGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.baconGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.chickenGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.StarterPage.SuspendLayout();
-            this.SweetTab.SuspendLayout();
             this.starterLayoutPanel.SuspendLayout();
             this.chickenwingGroupBox.SuspendLayout();
-            this.saladGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.mozzarellaGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.saladGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            this.SweetTab.SuspendLayout();
             this.sweetLayoutPanel.SuspendLayout();
             this.icecreamGroupBox.SuspendLayout();
-            this.chocolatecakeGroupBox.SuspendLayout();
-            this.cheesecakeGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.chocolatecakeGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.cheesecakeGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.confirmOrderPage.SuspendLayout();
             this.SuspendLayout();
@@ -163,9 +163,19 @@
             this.lblThin.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThin.Location = new System.Drawing.Point(7, 172);
             this.lblThin.Name = "lblThin";
-            this.lblThin.Size = new System.Drawing.Size(155, 32);
+            this.lblThin.Size = new System.Drawing.Size(155, 16);
             this.lblThin.TabIndex = 2;
-            this.lblThin.Text = "Light, yet delicious pizza!\r\n£3.99";
+            this.lblThin.Text = "Light, yet delicious pizza!\r\n";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::PizzaApplication.Properties.Resources.thin;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(344, 144);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // btnThin
             // 
@@ -197,9 +207,19 @@
             this.lblThick.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThick.Location = new System.Drawing.Point(7, 172);
             this.lblThick.Name = "lblThick";
-            this.lblThick.Size = new System.Drawing.Size(142, 32);
+            this.lblThick.Size = new System.Drawing.Size(142, 16);
             this.lblThick.TabIndex = 2;
-            this.lblThick.Text = "Thick and hearty pizza!\r\n£5.99";
+            this.lblThick.Text = "Thick and hearty pizza!\r\n";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::PizzaApplication.Properties.Resources.thick;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(7, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(344, 144);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // btnThick
             // 
@@ -232,10 +252,21 @@
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(7, 174);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(248, 32);
+            this.label2.Size = new System.Drawing.Size(248, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Chicago pizza, baked for maximum taste!\r\n£6.99";
+            this.label2.Text = "Chicago pizza, baked for maximum taste!";
             this.label2.UseWaitCursor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::PizzaApplication.Properties.Resources.chicago1;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(7, 21);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(344, 144);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.UseWaitCursor = true;
             // 
             // btnDeep
             // 
@@ -355,6 +386,16 @@
             this.btnPepperoni.UseVisualStyleBackColor = true;
             this.btnPepperoni.Click += new System.EventHandler(this.btnPepperoni_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::PizzaApplication.Properties.Resources.pepperoni;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(192, 109);
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
             // oliveGroupBox
             // 
             this.oliveGroupBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -376,6 +417,16 @@
             this.btnOlives.Text = "Select";
             this.btnOlives.UseVisualStyleBackColor = true;
             this.btnOlives.Click += new System.EventHandler(this.btnOlives_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::PizzaApplication.Properties.Resources.olives;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(192, 109);
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
             // 
             // pepperGroupBox
             // 
@@ -399,6 +450,16 @@
             this.btnPeppers.UseVisualStyleBackColor = true;
             this.btnPeppers.Click += new System.EventHandler(this.btnPeppers_Click);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::PizzaApplication.Properties.Resources.pepper;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(192, 109);
+            this.pictureBox6.TabIndex = 3;
+            this.pictureBox6.TabStop = false;
+            // 
             // hamGroupBox
             // 
             this.hamGroupBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -420,6 +481,16 @@
             this.btnHam.Text = "Select";
             this.btnHam.UseVisualStyleBackColor = true;
             this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::PizzaApplication.Properties.Resources.ham;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(192, 109);
+            this.pictureBox7.TabIndex = 3;
+            this.pictureBox7.TabStop = false;
             // 
             // mushroomGroupBox
             // 
@@ -443,6 +514,16 @@
             this.btnMushroom.UseVisualStyleBackColor = true;
             this.btnMushroom.Click += new System.EventHandler(this.btnMushroom_Click);
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = global::PizzaApplication.Properties.Resources.mushroom;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(192, 109);
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            // 
             // cheeseGroupBox
             // 
             this.cheeseGroupBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -464,6 +545,16 @@
             this.btnExtraCheese.Text = "Select";
             this.btnExtraCheese.UseVisualStyleBackColor = true;
             this.btnExtraCheese.Click += new System.EventHandler(this.btnExtraCheese_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = global::PizzaApplication.Properties.Resources.cheese;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(192, 109);
+            this.pictureBox9.TabIndex = 3;
+            this.pictureBox9.TabStop = false;
             // 
             // baconGroupBox
             // 
@@ -487,6 +578,16 @@
             this.btnBacon.UseVisualStyleBackColor = true;
             this.btnBacon.Click += new System.EventHandler(this.btnBacon_Click);
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::PizzaApplication.Properties.Resources.bacon;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(192, 109);
+            this.pictureBox10.TabIndex = 3;
+            this.pictureBox10.TabStop = false;
+            // 
             // chickenGroupBox
             // 
             this.chickenGroupBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -509,6 +610,16 @@
             this.btnChicken.UseVisualStyleBackColor = true;
             this.btnChicken.Click += new System.EventHandler(this.btnChicken_Click);
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::PizzaApplication.Properties.Resources.chicken;
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox11.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(192, 109);
+            this.pictureBox11.TabIndex = 3;
+            this.pictureBox11.TabStop = false;
+            // 
             // StarterPage
             // 
             this.StarterPage.Controls.Add(this.starterLayoutPanel);
@@ -519,17 +630,6 @@
             this.StarterPage.TabIndex = 2;
             this.StarterPage.Text = "Starters";
             this.StarterPage.UseVisualStyleBackColor = true;
-            // 
-            // SweetTab
-            // 
-            this.SweetTab.Controls.Add(this.sweetLayoutPanel);
-            this.SweetTab.Location = new System.Drawing.Point(4, 22);
-            this.SweetTab.Name = "SweetTab";
-            this.SweetTab.Padding = new System.Windows.Forms.Padding(3);
-            this.SweetTab.Size = new System.Drawing.Size(941, 492);
-            this.SweetTab.TabIndex = 3;
-            this.SweetTab.Text = "Sweets";
-            this.SweetTab.UseVisualStyleBackColor = true;
             // 
             // starterLayoutPanel
             // 
@@ -562,26 +662,15 @@
             this.btnChickenWing.UseVisualStyleBackColor = true;
             this.btnChickenWing.Click += new System.EventHandler(this.btnChickenWing_Click);
             // 
-            // saladGroupBox
+            // pictureBox12
             // 
-            this.saladGroupBox.Controls.Add(this.btnSalad);
-            this.saladGroupBox.Controls.Add(this.pictureBox14);
-            this.saladGroupBox.Location = new System.Drawing.Point(613, 3);
-            this.saladGroupBox.Name = "saladGroupBox";
-            this.saladGroupBox.Size = new System.Drawing.Size(299, 236);
-            this.saladGroupBox.TabIndex = 3;
-            this.saladGroupBox.TabStop = false;
-            this.saladGroupBox.Text = "Salad";
-            // 
-            // btnSalad
-            // 
-            this.btnSalad.Location = new System.Drawing.Point(218, 207);
-            this.btnSalad.Name = "btnSalad";
-            this.btnSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnSalad.TabIndex = 1;
-            this.btnSalad.Text = "Select";
-            this.btnSalad.UseVisualStyleBackColor = true;
-            this.btnSalad.Click += new System.EventHandler(this.btnSalad_Click);
+            this.pictureBox12.BackgroundImage = global::PizzaApplication.Properties.Resources.chickenwing;
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox12.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(286, 181);
+            this.pictureBox12.TabIndex = 0;
+            this.pictureBox12.TabStop = false;
             // 
             // mozzarellaGroupBox
             // 
@@ -603,6 +692,58 @@
             this.btnMozzarellaSticks.Text = "Select";
             this.btnMozzarellaSticks.UseVisualStyleBackColor = true;
             this.btnMozzarellaSticks.Click += new System.EventHandler(this.btnMozzarellaSticks_Click);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImage = global::PizzaApplication.Properties.Resources.mozzarellasticks;
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox13.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(286, 181);
+            this.pictureBox13.TabIndex = 0;
+            this.pictureBox13.TabStop = false;
+            // 
+            // saladGroupBox
+            // 
+            this.saladGroupBox.Controls.Add(this.btnSalad);
+            this.saladGroupBox.Controls.Add(this.pictureBox14);
+            this.saladGroupBox.Location = new System.Drawing.Point(613, 3);
+            this.saladGroupBox.Name = "saladGroupBox";
+            this.saladGroupBox.Size = new System.Drawing.Size(299, 236);
+            this.saladGroupBox.TabIndex = 3;
+            this.saladGroupBox.TabStop = false;
+            this.saladGroupBox.Text = "Salad";
+            // 
+            // btnSalad
+            // 
+            this.btnSalad.Location = new System.Drawing.Point(218, 207);
+            this.btnSalad.Name = "btnSalad";
+            this.btnSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnSalad.TabIndex = 1;
+            this.btnSalad.Text = "Select";
+            this.btnSalad.UseVisualStyleBackColor = true;
+            this.btnSalad.Click += new System.EventHandler(this.btnSalad_Click);
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackgroundImage = global::PizzaApplication.Properties.Resources.salad;
+            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox14.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(286, 181);
+            this.pictureBox14.TabIndex = 0;
+            this.pictureBox14.TabStop = false;
+            // 
+            // SweetTab
+            // 
+            this.SweetTab.Controls.Add(this.sweetLayoutPanel);
+            this.SweetTab.Location = new System.Drawing.Point(4, 22);
+            this.SweetTab.Name = "SweetTab";
+            this.SweetTab.Padding = new System.Windows.Forms.Padding(3);
+            this.SweetTab.Size = new System.Drawing.Size(941, 492);
+            this.SweetTab.TabIndex = 3;
+            this.SweetTab.Text = "Sweets";
+            this.SweetTab.UseVisualStyleBackColor = true;
             // 
             // sweetLayoutPanel
             // 
@@ -634,7 +775,19 @@
             this.btnIceCream.TabIndex = 1;
             this.btnIceCream.Text = "Select";
             this.btnIceCream.UseVisualStyleBackColor = true;
+            this.btnIceCream.UseWaitCursor = true;
             this.btnIceCream.Click += new System.EventHandler(this.btnIceCream_Click);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImage = global::PizzaApplication.Properties.Resources.icecream;
+            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox15.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(291, 180);
+            this.pictureBox15.TabIndex = 0;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.UseWaitCursor = true;
             // 
             // chocolatecakeGroupBox
             // 
@@ -659,6 +812,17 @@
             this.btnChocolateCake.UseWaitCursor = true;
             this.btnChocolateCake.Click += new System.EventHandler(this.btnChocolateCake_Click);
             // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackgroundImage = global::PizzaApplication.Properties.Resources.chocolatecake;
+            this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox16.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(291, 180);
+            this.pictureBox16.TabIndex = 0;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.UseWaitCursor = true;
+            // 
             // cheesecakeGroupBox
             // 
             this.cheesecakeGroupBox.Controls.Add(this.btnCheesecake);
@@ -681,168 +845,6 @@
             this.btnCheesecake.UseVisualStyleBackColor = true;
             this.btnCheesecake.UseWaitCursor = true;
             this.btnCheesecake.Click += new System.EventHandler(this.btnCheesecake_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::PizzaApplication.Properties.Resources.thin;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(344, 144);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::PizzaApplication.Properties.Resources.chicago1;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(7, 21);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(344, 144);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.UseWaitCursor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::PizzaApplication.Properties.Resources.thick;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(7, 21);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(344, 144);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::PizzaApplication.Properties.Resources.pepperoni;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(192, 109);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::PizzaApplication.Properties.Resources.olives;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(192, 109);
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::PizzaApplication.Properties.Resources.pepper;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(192, 109);
-            this.pictureBox6.TabIndex = 3;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::PizzaApplication.Properties.Resources.ham;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(192, 109);
-            this.pictureBox7.TabIndex = 3;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImage = global::PizzaApplication.Properties.Resources.mushroom;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(192, 109);
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = global::PizzaApplication.Properties.Resources.cheese;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(192, 109);
-            this.pictureBox9.TabIndex = 3;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImage = global::PizzaApplication.Properties.Resources.bacon;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(192, 109);
-            this.pictureBox10.TabIndex = 3;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImage = global::PizzaApplication.Properties.Resources.chicken;
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox11.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(192, 109);
-            this.pictureBox11.TabIndex = 3;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImage = global::PizzaApplication.Properties.Resources.chickenwing;
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox12.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(286, 181);
-            this.pictureBox12.TabIndex = 0;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackgroundImage = global::PizzaApplication.Properties.Resources.mozzarellasticks;
-            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox13.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(286, 181);
-            this.pictureBox13.TabIndex = 0;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackgroundImage = global::PizzaApplication.Properties.Resources.salad;
-            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox14.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(286, 181);
-            this.pictureBox14.TabIndex = 0;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackgroundImage = global::PizzaApplication.Properties.Resources.icecream;
-            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox15.Location = new System.Drawing.Point(6, 19);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(291, 180);
-            this.pictureBox15.TabIndex = 0;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackgroundImage = global::PizzaApplication.Properties.Resources.chocolatecake;
-            this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox16.Location = new System.Drawing.Point(6, 19);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(291, 180);
-            this.pictureBox16.TabIndex = 0;
-            this.pictureBox16.TabStop = false;
-            this.pictureBox16.UseWaitCursor = true;
             // 
             // pictureBox17
             // 
@@ -868,15 +870,16 @@
             this.confirmOrderPage.Text = "Confirm Order";
             this.confirmOrderPage.UseVisualStyleBackColor = true;
             // 
-            // finalOrderListBox
+            // btnOrder
             // 
-            this.finalOrderListBox.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.finalOrderListBox.FormattingEnabled = true;
-            this.finalOrderListBox.ItemHeight = 18;
-            this.finalOrderListBox.Location = new System.Drawing.Point(258, 72);
-            this.finalOrderListBox.Name = "finalOrderListBox";
-            this.finalOrderListBox.Size = new System.Drawing.Size(414, 274);
-            this.finalOrderListBox.TabIndex = 0;
+            this.btnOrder.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.Location = new System.Drawing.Point(414, 352);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(103, 35);
+            this.btnOrder.TabIndex = 2;
+            this.btnOrder.Text = "Order";
+            this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // label1
             // 
@@ -889,16 +892,15 @@
             this.label1.Text = "Order Summary";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnOrder
+            // finalOrderListBox
             // 
-            this.btnOrder.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrder.Location = new System.Drawing.Point(414, 352);
-            this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(103, 35);
-            this.btnOrder.TabIndex = 2;
-            this.btnOrder.Text = "Order";
-            this.btnOrder.UseVisualStyleBackColor = true;
-            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
+            this.finalOrderListBox.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalOrderListBox.FormattingEnabled = true;
+            this.finalOrderListBox.ItemHeight = 18;
+            this.finalOrderListBox.Location = new System.Drawing.Point(258, 72);
+            this.finalOrderListBox.Name = "finalOrderListBox";
+            this.finalOrderListBox.Size = new System.Drawing.Size(414, 274);
+            this.finalOrderListBox.TabIndex = 0;
             // 
             // PizzaBaseForm
             // 
@@ -912,49 +914,49 @@
             this.Text = "Select Your Order";
             this.thinBox.ResumeLayout(false);
             this.thinBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.thickBox.ResumeLayout(false);
             this.thickBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.deepBase.ResumeLayout(false);
             this.deepBase.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.mainTabControl.ResumeLayout(false);
             this.pizzabaseTab.ResumeLayout(false);
             this.pizzaBaseLayoutPanel.ResumeLayout(false);
             this.toppingsTab.ResumeLayout(false);
             this.toppingLayoutPanel.ResumeLayout(false);
             this.pepperoniGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.oliveGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pepperGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.hamGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.mushroomGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.cheeseGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.baconGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.chickenGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.StarterPage.ResumeLayout(false);
-            this.SweetTab.ResumeLayout(false);
             this.starterLayoutPanel.ResumeLayout(false);
             this.chickenwingGroupBox.ResumeLayout(false);
-            this.saladGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.mozzarellaGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.saladGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            this.SweetTab.ResumeLayout(false);
             this.sweetLayoutPanel.ResumeLayout(false);
             this.icecreamGroupBox.ResumeLayout(false);
-            this.chocolatecakeGroupBox.ResumeLayout(false);
-            this.cheesecakeGroupBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.chocolatecakeGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            this.cheesecakeGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.confirmOrderPage.ResumeLayout(false);
             this.confirmOrderPage.PerformLayout();

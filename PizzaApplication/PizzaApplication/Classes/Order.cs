@@ -17,12 +17,14 @@ namespace PizzaApplication.Classes
             {
                 if(item.ItemName == name)
                 {
+                    //Return value of true if it matches
                     return true;
                 }
             }
             return false;
         }
 
+        // Removes an item - we can't use our base 'list.Remove' method due to the way we made our list work. 
         public void RemoveItem(string name)
         {
             foreach(Item item in Items.ToList())
@@ -35,3 +37,6 @@ namespace PizzaApplication.Classes
         }
     }
 }
+
+
+

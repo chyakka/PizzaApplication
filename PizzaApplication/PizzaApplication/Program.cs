@@ -16,7 +16,7 @@ namespace PizzaApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PizzaBaseForm());
+            Application.Run(new MainForm());
         }
     }
 }

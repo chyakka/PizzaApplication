@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PizzaApplication.Managers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +17,6 @@ namespace PizzaApplication
         public MainForm()
         {
             InitializeComponent();
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnContinue_Click(object sender, EventArgs e)
@@ -43,9 +39,13 @@ namespace PizzaApplication
                 return;
             }
 
+            UserData.user = new Classes.User(txtName.Text, txtAddress.Text, txtPostCode.Text);
+
             PizzaBaseForm pizzaForm = new PizzaBaseForm();
             pizzaForm.Show();
             Hide();
         }
     }
 }
+
+
